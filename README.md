@@ -1,4 +1,4 @@
-# Mark it down
+# Mark Me down
 ## Simple website that lets user to write and try markdown.
 
 ### Want to collaborate?
