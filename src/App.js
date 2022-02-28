@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="app">
       <header>
-        <h1 className="app-title"><span>Mark</span> It <span>Down</span></h1>
+        <h1 className="app-title"><span>Mark</span> Me <span>Down</span></h1>
       </header>
       <div className="container">
         <div className="md-writer">
