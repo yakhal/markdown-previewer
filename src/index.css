@@ -1,3 +1,14 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Teko:wght@300&display=swap');
+
+/* Global Styles */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,7 +18,95 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* App Styles */
+.container{
+  /* border: 1px solid black; */
+  max-width: 1536px;
+  height: 95vh;
+  padding: 1em 1em;
+  margin: auto;
+  display: flex; 
+  flex-direction: column-reverse;
+}
+
+
+/* Header Styles */
+header{
+  background-color: black;
+  height: 5vh;
+}
+
+.app-title{
+  margin: 0;
+  color: white;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 4vh;
+}
+
+.app-title span{
+  color: black;
+  background:#fde047;
+  border-radius: 2px;
+}
+
+/* MD-Writer Styles and Previewer Styles */
+.md-writer h2, .previewer h2{
+  font-family: 'Teko', sans-serif;
+  font-weight: 100;
+  margin: 0;
+}
+
+.md-writer, .previewer{
+  height: 50%;
+}
+
+/* MD Writer Styles */
+textarea{
+  max-width: 100%;
+  width: 100%;
+  max-height: 85%;
+  height: 100%;
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 2px;
+  transition: border 0.5s;
+}
+
+textarea:focus{
+  outline: none;
+  border: 1px solid #fde047;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+/* Previewer Styles */
+.result{
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 2px;
+  height: 80%;
+  overflow-y: scroll;
+}
+
+@media(min-width: 1024px){
+  .container{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  /* MD Writer & Previewer Styles */
+  .md-writer, .previewer{
+      height: 100%;
+      width: 49%;
+  }
+
+  /* MD Writer Styles */
+  textarea{
+    max-height: 95%;
+  }
+
+  .result{
+    height: 95%;
+  }
 }
