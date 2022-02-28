@@ -11,10 +11,9 @@ html {
 
 body {
   margin: 0;
-  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif; */
-  font-family: sans-serif;
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -109,6 +108,7 @@ textarea:focus{
   width: 100%;
 }
 
+/* Change Windows on Large Screens */
 @media(min-width: 1024px){
   .container{
     flex-direction: row;
@@ -125,7 +125,8 @@ textarea:focus{
   textarea{
     max-height: 95%;
   }
-
+  
+  /* Previewer Styles */
   .result{
     height: 95%;
   }
